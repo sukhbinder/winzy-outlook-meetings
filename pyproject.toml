@@ -10,6 +10,7 @@ classifiers = [
 ]
 dependencies = [
     "winzy",
+    "dateutil",
 ]
 
 [project.urls]
