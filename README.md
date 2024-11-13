@@ -7,6 +7,24 @@
 
 Get outlook calendar entries in commandline.
 
+## Introduction
+
+`winzy_outlook_meetings` is a plugin of `winzy`, which allows users to retrieve outlook calendar entries in a command-line interface.
+
+## Features
+
+*   Retrieves outlook calendar entries based on start date and number of days.
+*   Supports both text-based output and opening the generated schedule in its default application.
+
+## Prerequisites
+
+Before you begin using `winzy_outlook_meetings`, ensure that:
+
+*   You have Python installed on your system.
+*   You are familiar with basic command-line interface operations.
+*   Your Outlook calendar account has been configured properly.
+
+
 ## Installation
 
 First configure your Winzy project [to use Winzy](https://github.com/sukhbinder/winzy).
@@ -15,9 +33,27 @@ Then install this plugin in the same environment as your Winzy application.
 ```bash
 pip install winzy-outlook-meetings
 ```
+
 ## Usage
 
-Usage instructions go here.
+
+To retrieve and display your Outlook calendar entries, use the following command:
+
+```bash
+winzy outcal --start_date <date> --days <number>
+```
+Replace `<date>` with the desired start date in `YYYY-MM-DD` format and `<number>` with the number of days for which you want to retrieve calendar entries.
+
+For example, to retrieve the next 14 days' worth of Outlook calendar entries, use:
+
+```bash
+winzy outcal --start_date 2023-03-01 --days 14
+```
+
+## Output
+
+`winzy_outlook_meetings` will display the retrieved calendar entries in a human-readable format. The output include information such as event titles, start, duration, locations, and descriptions.
+
 
 ## Development
 
