@@ -40,14 +40,14 @@ pip install winzy-outlook-meetings
 To retrieve and display your Outlook calendar entries, use the following command:
 
 ```bash
-winzy outcal --start_date <date> --days <number>
+winzy outcal --start <date> --days <number>
 ```
 Replace `<date>` with the desired start date in `YYYY-MM-DD` format and `<number>` with the number of days for which you want to retrieve calendar entries.
 
 For example, to retrieve the next 14 days' worth of Outlook calendar entries, use:
 
 ```bash
-winzy outcal --start_date 2023-03-01 --days 14
+winzy outcal --start 2023-03-01 --days 14
 ```
 
 ## Output
