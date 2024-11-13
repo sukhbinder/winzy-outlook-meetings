@@ -6,7 +6,6 @@ from datetime import datetime, timedelta
 from pathlib import Path
 
 
-import numpy as np
 from dateutil import parser
 
 VBSCRIPT = """
